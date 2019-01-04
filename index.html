@@ -4,6 +4,7 @@ a:visited{color: black; text-decoration:underline;}
 a:hover {color: blue; text-decoration:underline;}
 em{text-shadow:2px 2px 5px #333333;}
 </style>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" />
 <title>Duer.org - An Open-Source C-Like Programming Language</title>
 <link rel="shortcut icon" href="/favicon.ico" /> 
 <h2>Duer.org - An Open-Source C-Like Programming Language</h2>
@@ -24,7 +25,16 @@ em{text-shadow:2px 2px 5px #333333;}
 <li>Contact Alvazu at <a href="mailto:duer@mailwhat.com">duer@mailwhat.com</a>.</li>
 </ul>
 </details>
-<center style="color: red;">
+<div id="tip"><center style="color: red;">
   If you are looking for Baidu DuerOS, please go to <a href="http://dueros.baidu.com">dueros.baidu.com</a>.
   <br>This site has <b>NOTHING</b> to do with Baidu.
-</center>
+  <button>OK</button>
+</center></div>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#tip").fadeOut();
+  });
+});
+</script>
